@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_scroll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="820dp"
+        android:background="@color/dark_white"
+        tools:context=".MainActivity">
+
+        <!-- intro -->
+        <RelativeLayout
+            android:id="@+id/intro_main"
+            android:layout_width="match_parent"
+            android:layout_height="290dp"
+            android:background="@color/pastel_blue"
+            android:gravity="center_horizontal">
+
+            <RelativeLayout
+                android:id="@+id/nav"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:background="@color/pastel_blue">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/logo_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="-2dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_toEndOf="@+id/imageView"
+                    android:fontFamily="@font/montserrat_alternates_bold"
+                    android:text="@string/logo_name"
+                    android:textSize="10sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/switch_btn"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@id/logo_name"
+                    android:layout_marginStart="200dp"
+                    android:fontFamily="@font/montserrat_alternates_bold"
+                    android:text="@string/enableNight_btn"
+                    android:background="@drawable/button"
+                    android:backgroundTint="@color/dark_blue"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text_intro_header"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="55dp"
+                android:fontFamily="@font/montserrat_alternates_bold"
+                android:gravity="center"
+                android:text="@string/main_intro_header"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/text_intro_underheader"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_intro_header"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/montserrat_alternates"
+                android:gravity="center"
+                android:text="@string/main_intro_underheader"
+                android:textSize="12sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/main_intro_button"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/text_intro_underheader"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/montserrat_alternates_bold"
+                android:text="@string/main_intro_btn"
+                android:textColor="@color/dark_blue"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="100dp"
+                android:src="@drawable/img_bk3" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="130dp"
+                android:layout_marginEnd="0dp"
+                android:src="@drawable/img_bk1" />
+
+        </RelativeLayout>
+
+        <!-- scribble -->
+        <RelativeLayout
+            android:id="@+id/scribble_main"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/intro_main"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="195dp"
+            android:layout_marginTop="-17dp">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/scribble" />
+        </RelativeLayout>
+
+        <!--catalog -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="810dp"
+            android:layout_below="@+id/intro_main"
+            android:layout_marginTop="0dp">
+
+            <TextView
+                android:id="@+id/catalog_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="115dp"
+                android:fontFamily="@font/montserrat_alternates_bold"
+                android:gravity="center"
+                android:text="@string/catalog_header"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="105dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/w2" />
+
+            <!-- genreBar -->
+            <RelativeLayout
+                android:id="@+id/genreBar"
+                android:layout_width="380dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/catalog_header"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="65dp">
+
+                <TextView
+                    android:id="@+id/genre1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/montserrat_alternates_semibold"
+                    android:text="@string/genre1"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/genre2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_toEndOf="@+id/genre1"
+                    android:fontFamily="@font/montserrat_alternates_semibold"
+                    android:text="@string/genre2"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/genre3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_toEndOf="@+id/genre2"
+                    android:fontFamily="@font/montserrat_alternates_semibold"
+                    android:text="@string/genre3"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/genre4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_toEndOf="@+id/genre3"
+                    android:fontFamily="@font/montserrat_alternates_semibold"
+                    android:text="@string/genre4"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/genre5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toEndOf="@+id/genre4"
+                    android:fontFamily="@font/montserrat_alternates_semibold"
+                    android:text="@string/genre5"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="380dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/line" />
+
+            </RelativeLayout>
+
+            <!-- bookBar -->
+            <RelativeLayout
+                android:id="@+id/shadowBookItem1"
+                android:layout_width="380dp"
+                android:layout_height="150dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="117dp"
+                android:background="@drawable/book_item"
+                android:backgroundTint="@color/dark_blue" />
+
+            <RelativeLayout
+                android:id="@+id/bookItem1"
+                android:layout_width="380dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/genreBar"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/book_item"
+                android:backgroundTint="@color/white">
+
+                <ImageView
+                    android:id="@+id/bookItem1_img"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/book1" />
+
+                <TextView
+                    android:id="@+id/bookItem1_author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_toEndOf="@+id/bookItem1_img"
+                    android:fontFamily="@font/montserrat_alternates_semibold"
+                    android:text="@string/bookItem1_author"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/bookItem1_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bookItem1_author"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_toEndOf="@+id/bookItem1_img"
+                    android:fontFamily="@font/montserrat_alternates_bold"
+                    android:text="@string/bookItem1_name"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/bookItem1_summary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bookItem1_name"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toEndOf="@+id/bookItem1_img"
+                    android:fontFamily="@font/montserrat_alternates"
+                    android:maxWidth="220dp"
+                    android:text="@string/bookItem1_summary"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/bookItem1_line"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bookItem1_summary"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="-5dp"
+                    android:layout_toEndOf="@+id/bookItem1_img"
+                    android:background="@drawable/line" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/bookItem1_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="33dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/button"
+                    android:backgroundTint="@color/dark_blue"
+                    android:fontFamily="@font/montserrat_alternates_bold"
+                    android:text="@string/bookItem_btn"
+                    android:textColor="@color/white"
+                    android:textSize="9sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/shadowBookItem2"
+                android:layout_width="380dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/shadowBookItem1"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/book_item"
+                android:backgroundTint="@color/dark_blue" />
+
+
+            <RelativeLayout
+                android:id="@+id/bookItem2"
+                android:layout_width="380dp"
+                android:layout_height="150dp"
+                android:layout_alignStart="@+id/shadowBookItem2"
+                android:layout_alignTop="@+id/shadowBookItem2"
+                android:layout_marginStart="-5dp"
+                android:layout_marginTop="-7dp"
+                android:background="@drawable/book_item"
+                android:backgroundTint="@color/white">
+
+                <ImageView
+                    android:id="@+id/bookItem2_img"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/book2" />
+
+                <TextView
+                    android:id="@+id/bookItem2_author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_toEndOf="@+id/bookItem2_img"
+                    android:fontFamily="@font/montserrat_alternates_semibold"
+                    android:text="@string/bookItem2_author"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/bookItem2_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bookItem2_author"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_toEndOf="@+id/bookItem2_img"
+                    android:fontFamily="@font/montserrat_alternates_bold"
+                    android:text="@string/bookItem2_name"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/bookItem2_summary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bookItem2_name"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toEndOf="@+id/bookItem2_img"
+                    android:fontFamily="@font/montserrat_alternates"
+                    android:maxWidth="220dp"
+                    android:text="@string/bookItem2_summary"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/bookItem2_line"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bookItem2_summary"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="-5dp"
+                    android:layout_toEndOf="@+id/bookItem2_img"
+                    android:background="@drawable/line" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/bookItem2_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="33dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/button"
+                    android:backgroundTint="@color/dark_blue"
+                    android:fontFamily="@font/montserrat_alternates_bold"
+                    android:text="@string/bookItem_btn"
+                    android:textColor="@color/white"
+                    android:textSize="9sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/shadowBookItem3"
+                android:layout_width="380dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/shadowBookItem2"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/book_item"
+                android:backgroundTint="@color/dark_blue" />
+
+            <RelativeLayout
+                android:id="@+id/bookItem3"
+                android:layout_width="380dp"
+                android:layout_height="150dp"
+                android:layout_alignStart="@+id/shadowBookItem3"
+                android:layout_alignTop="@+id/shadowBookItem3"
+                android:layout_marginStart="-5dp"
+                android:layout_marginTop="-7dp"
+                android:background="@drawable/book_item"
+                android:backgroundTint="@color/white">
+
+                <ImageView
+                    android:id="@+id/bookItem3_img"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/book3" />
+
+                <TextView
+                    android:id="@+id/bookItem3_author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_toEndOf="@+id/bookItem3_img"
+                    android:fontFamily="@font/montserrat_alternates_semibold"
+                    android:text="@string/bookItem3_author"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/bookItem3_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bookItem3_author"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_toEndOf="@+id/bookItem3_img"
+                    android:fontFamily="@font/montserrat_alternates_bold"
+                    android:text="@string/bookItem3_name"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/bookItem3_summary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bookItem3_name"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toEndOf="@+id/bookItem3_img"
+                    android:fontFamily="@font/montserrat_alternates"
+                    android:maxWidth="220dp"
+                    android:text="@string/bookItem3_summary"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/bookItem3_line"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bookItem3_summary"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="-5dp"
+                    android:layout_toEndOf="@+id/bookItem3_img"
+                    android:background="@drawable/line" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/bookItem3_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="33dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/button"
+                    android:backgroundTint="@color/dark_blue"
+                    android:fontFamily="@font/montserrat_alternates_bold"
+                    android:text="@string/bookItem_btn"
+                    android:textColor="@color/white"
+                    android:textSize="9sp" />
+
+            </RelativeLayout>
+
+            <!-- main_quote -->
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/bookItem3"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="13dp"
+                android:src="@drawable/w" />
+
+            <RelativeLayout
+                android:id="@+id/quote"
+                android:layout_width="350dp"
+                android:layout_height="120dp"
+                android:layout_below="@+id/bookItem3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="52dp"
+                android:background="@color/pastel_blue">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/chard"
+                    android:textSize="40sp"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/montserrat_alternates_bold"
+                    android:textColor="@color/dark_blue"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:gravity="center"
+                    android:text="@string/quote_txt"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/montserrat_alternates_bold"
+                    android:textColor="@color/dark_blue"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="80dp"
+                    android:background="@color/pastel_blue">
+                    
+                    <ImageView
+                        android:id="@+id/quote_main_img"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/dostoev"/>
+
+                    <TextView
+                        android:id="@+id/quote_main_author"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/quote_main_img"
+                        android:layout_marginStart="5dp"
+                        android:layout_centerVertical="true"
+                        android:text="@string/bookItem1_author"
+                        android:textSize="9sp"
+                        android:fontFamily="@font/montserrat_alternates_semibold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/quote_main_author"
+                        android:layout_marginStart="1dp"
+                        android:layout_centerVertical="true"
+                        android:text="@string/quote_main_platform"
+                        android:textSize="9sp"
+                        android:fontFamily="@font/montserrat_alternates_bold"/>
+                    
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

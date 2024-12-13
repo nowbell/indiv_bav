@@ -1,0 +1,172 @@
+<resources>
+    <string name="app_name">indiv_bav</string>
+
+
+
+    <!-- activity_main -->
+
+    <!-- intro -->
+
+    <!-- nav -->
+    <string name="logo_name">knigga</string>
+    <string name="enableNight_btn">темная тема</string>
+    <string name="disableNight_btn">светлая тема</string>
+
+    <!-- intro_content -->
+    <string name="main_intro_header">kniiga - путь\n к \nсовершенству</string>
+    <string name="main_intro_underheader">Читайте!\nРазвивайтесь!\nСовершенствуйтесь!</string>
+    <string name="main_intro_btn">подробнее</string>
+    <string name="about_intro_header">О\n нашей(вашей) \nkniiga</string>
+
+    <!-- catalog -->
+
+    <!-- genre_bar -->
+    <string name="catalog_header">Последние книги</string>
+    <string name="genre1">Все</string>
+    <string name="genre2">Роман</string>
+    <string name="genre3">Детектив</string>
+    <string name="genre4">Драма</string>
+    <string name="genre5">Комедия</string>
+    <string name="bookItem_btn">перейти</string>
+
+    <!-- bookItem1 -->
+    <string name="bookItem1_author">ФЕДОР ДОСТОЕВСКИЙ</string>
+    <string name="bookItem1_name">Белые ночи</string>
+    <string name="bookItem1_summary">
+        "Белые ночи" – одно из лучших произведений школы "сентиментального натурализма", по мнению критика...
+    </string>
+
+    <!-- bookItem2 -->
+    <string name="bookItem2_author">АЛЕКСАНДР ПУШКИН</string>
+    <string name="bookItem2_name">Евгений Онегин</string>
+    <string name="bookItem2_summary">
+        «Евгений Онегин» (1823–1831) — одно изсамых значительных произведений русской литературы...
+    </string>
+
+    <!-- bookItem3 -->
+    <string name="bookItem3_author">ХАРУКИ МУРАКАМИ</string>
+    <string name="bookItem3_name">Слушай песню ветра</string>
+    <string name="bookItem3_summary">
+        Грустная сказка для старшего школьного возраста. История началась  8 августа 1970 года и закончилась...
+    </string>
+
+    <!-- quote -->
+    <string name="chard">“</string>
+    <string name="quote_txt">Перестать читать книги — значит перестать мыслить.</string>
+    <string name="quote_main_platform">, русский писатель</string>
+
+
+
+    <!-- activity_about -->
+
+    <!-- about_block1 -->
+    <string name="about_block1_num">10</string>
+    <string name="about_block1_k">K</string>
+    <string name="about_block1_txt">книг в библиотеке</string>
+
+    <!-- about_block2 -->
+    <string name="about_block2_num">15</string>
+    <string name="about_block2_k">K</string>
+    <string name="about_block2_txt">пользователей</string>
+
+    <!-- about_block3 -->
+    <string name="about_block3_num">3</string>
+    <string name="about_block3_k">K</string>
+    <string name="about_block3_txt">среднего онлайна в сутки</string>
+
+    <!-- about_info -->
+    <string name="about_info_header">Немножко о нас</string>
+    <string name="about_info_underheader">Как и любой проект, мы создаем историю.</string>
+    <string name="about_info_txt1">
+        «Kniiga» — популярный литературный портал. В нашей электронной библиотеке можно как читать книги онлайн, так и скачать книги бесплатно, а также купить
+        книги популярных жанров. \n\n Вам интересны фанфики? Юмор? Различные жанры произведений? — Вы можете читать на нашей литературной платформе онлайн, а можете и
+        бесплатно скачать книги. Кроме того у наших читателей есть возможность купить
+    </string>
+    <string name="about_info_txt2">
+        электронные книги. Наша бесплатная библиотека электронных книг непрерывно пополняется новыми произведениями от популярных авторов и молодых талантов.
+        Подростковая проза соседствует с любовными романами, а вместе с книгами о попаданцах вы увидите фантастику,
+        современную прозу и боевик. \n\n Больше информации. Перейти</string>
+
+    <!-- about_button -->
+    <string name="about_info_btn">вернуться на главную</string>
+
+
+
+    <!-- activity_book1 -->
+
+    <!-- book1_intro -->
+    <string name="book1_author">Федор Достоевский</string>
+
+    <!-- book1_info -->
+    <string name="book1_info_header">Краткое содержание</string>
+    <string name="book1_info_txt1">
+        «Белые ночи» – одно из лучших произведений школы "сентиментального натурализма", по мнению критика Аполлона
+        Григорьева. \n\n Это лирическая исповедь героя-мечтателя, одинокого и робкого человека, в жизни которого на какое-то
+        время появляется девушка,  а вместе с ней и надежда на более светлое будущее.
+    </string>
+    <string name="book1_info_txt2">
+        В данном произведении (романе влюбленных) поднимается столь своевременная и сегодня проблема отчужденности личности.
+    </string>
+
+    <!-- book1_button -->
+    <string name="book1_back_btn">на главную</string>
+
+    <!-- book1_quote -->
+    <string name="book1_quote_txt">Так, когда мы несчастны, мы сильнее чувствуем несчастие других; чувство не разбивается, а сосредоточивается…</string>
+    <string name="book1_quote_name">, “Белые ночи“</string>
+
+    <!-- book1_audio -->
+    <string name="book1_audio_header">Для ваших ушек</string>
+    <string name="book1_audio_name">глава 1</string>
+
+
+
+    <!-- activity_book2 -->
+
+    <!-- book2_intro -->
+    <string name="book2_author">Александр Пушкин</string>
+
+    <!-- book2_info -->
+    <string name="book2_info_txt1">
+        «Евгений Онегин» (1823–1831) — одно из самых значительных произведений русской литературы. \n\n Пронзительная
+        любовная история, драматические повороты сюжета, тонкий психологизм персонажей, детальное описание быта и нравов той
+        эпохи (не случайно Белинский назвал роман «энциклопедией русской жизни») — в этом произведении, как в зеркале, отразилась вся русская жизнь.
+    </string>
+    <string name="book2_info_txt2">
+        «Евгений Онегин» никогда не утратит своей актуальности, и даже спустя два века мы поражаемся точности и верности «ума
+        холодных наблюдений и сердца горестных замет» великого русского поэта.
+    </string>
+
+    <!-- book2_quote -->
+    <string name="book2_quote_txt">И жить торопится, и чувствовать спешит.</string>
+    <string name="book2_quote_name">, “Евгений Онегин“</string>
+
+    <!-- book2_audio -->
+    <string name="book2_audio_name">глава 1</string>
+
+
+
+    <!-- activity_book3 -->
+
+    <!-- book3_intro -->
+    <string name="book3_author">Харуки Мураками</string>
+
+    <!-- book3_info -->
+    <string name="book3_info_txt1">
+       Грустная сказка для старшего школьного возраста. \n\n История началась  8 августа 1970 года и закончилась через 18
+        дней — то есть 26 августа того же года. Вся история длится девятнадцать полных дней, уверяет нас герой-рассказчик, но не
+        автор. Если посчитать внимательно, ты увидишь, что в девятнадцать дней эта история не укладывается, хоть тресни. Поверишь или проверишь?
+    </string>
+    <string name="book3_info_txt2">
+         «За лето мы с Крысой выпили 25-метровый бассейн пива и покрыли пол “Джейз-бара“ пятисантиметровым слоем арахисовой
+        шелухи. Если бы мы этого не делали, то просто бы не выжили, такое скучное было лето».
+    </string>
+
+    <!-- book3_quote -->
+    <string name="book3_quote_txt">Такой вещи, как идеальный текст, не существует. Как не существует идеального отчаяния.</string>
+    <string name="book3_quote_name">, “Слушай песню ветра“</string>
+
+    <!-- book3_audio -->
+    <string name="book3_audio_name">глава 1</string>
+
+</resources>
